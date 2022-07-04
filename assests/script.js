@@ -38,7 +38,7 @@ function fiveDayForeCast(data) {
             var appendBlock =
                 `<div class="card col-md-2 ml-4 bg-primary text-white">
                     <div class="card-body p-3 forecast-body">
-                        <h4 class="card-title">${data}</h4>
+                        <h4 class="card-title">${date}</h4>
                         <img src="https://openweathermap.org/img/w/${icon}.png"></img>
                         <p class="card-text forecast-temp">Temperature: ${fahrenheit}°F</p>
                         <p class="card-text forecast-wind">Wind Speed: ${wind}MPH</p>
@@ -63,7 +63,7 @@ function currentForeCast(city) {
         $("#current-city-forecast").empty();
 
         var cityName = data.name;
-        var date = moment().format("MM Do YYYY");
+        var date = moment().format("MMM Do YYYY");
         var icon = data.weather[0].icon;
         var temperature = data.main.temp;
         var fahrenheit = ((temperature - 273.15) * 1.80 + 32).toFixed(2);
