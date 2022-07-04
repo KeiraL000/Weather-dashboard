@@ -74,7 +74,7 @@ function currentForeCast(city) {
         `<div class="card>
             <div class="card-body">
                 <h4 class="card-title">${cityName} Today</h4>
-                <h4 class="card title">${date}
+                <h4 class="card-title">${date}
                     <img src="https://openweathermap.org/img/w/${icon}.png"></img>
                 </h4>
                 <p class="card-text current-temp">Temperature: ${fahrenheit}°F</p>
