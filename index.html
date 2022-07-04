@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ca89a4b9f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"/>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <div class="bg-dark pt-2 pb-2">
+            <h1 class="text-center text-white">Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-lg-3 bg-light pt-3 pb-3">
+                <h5>Search for city or town here: </h5>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="search-input" placeholder="e.g. Los Angeles">
+                    <button type="submit" class="btn btn-primary input-group-append" id="search-button"><i class="far fa-search"></i></button>
+                </div>
+
+                <div class="card">
+                    <ul id="city-list" class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+            <div class="col-lg-9 current-weather">
+                <div id="current-city-forecast" class="mt-4"></div>
+            </div>
+        </div>
+        <div class="mt-4 col-md-12 forecast" class="mt-4"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="assests/script.js"></script>
+    
+</body>
+</html>
