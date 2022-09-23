@@ -36,7 +36,7 @@ function fiveDayForeCast(data) {
             var humidity = data.list[day].main.humidity;
 
             var appendBlock =
-                `<div class="card col-md-2 ml-4 bg-primary text-white">
+                `<div class="card col-md-2 ml-4 bg-dark text-white">
                     <div class="card-body p-3 forecast-body">
                         <h4 class="card-title">${date}</h4>
                         <img src="https://openweathermap.org/img/w/${icon}.png"></img>
